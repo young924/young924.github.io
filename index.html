@@ -3,99 +3,258 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Young924 | Portfolio</title>
     <meta
       name="description"
-      content="A playful, responsive personal portfolio with a tiny game corner."
+      content="Young924's playful, responsive portfolio with a snake game corner."
     >
+    <title>Young924 | Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
     <script defer src="./script.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
       <div class="shell nav-shell">
         <a class="brand" href="#home" aria-label="Home">Young924</a>
-        <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
           Menu
         </button>
-        <nav class="site-nav" id="site-nav">
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
           <a href="#games">Games</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
     <main id="main">
       <section class="hero section shell" id="home">
-        <p class="eyebrow">Personal Portfolio</p>
-        <h1>Playful, professional, and ready for a tiny game corner.</h1>
-        <p class="lede">
-          This first loop preserves the existing content direction and sets up the
-          responsive structure needed for the CV-based site.
-        </p>
-        <div class="hero-actions">
-          <a class="button" href="#games">See Games</a>
-          <a class="button button-secondary" href="#about">About</a>
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio · Software Engineer</p>
+          <h1>Playful, professional, and ready for a tiny game corner.</h1>
+          <p class="lede">
+            This site uses the CV as the content source and adds a responsive,
+            kitchy game area for a keyboard- and touch-driven snake game.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#games">Jump to Games</a>
+            <a class="button button-secondary" href="#contact">Contact</a>
+          </div>
         </div>
+
+        <aside class="hero-card card">
+          <p class="eyebrow">Snapshot</p>
+          <ul class="snapshot-list">
+            <li><strong>Nayoung Kong</strong></li>
+            <li>Samsung Electronics · Android Developer</li>
+            <li>Samsung Electronics · Recruiting TF</li>
+            <li>LikeLion at Seoul National University</li>
+          </ul>
+        </aside>
       </section>
 
       <section class="section shell card-grid" id="about">
         <article class="card">
-          <h2>About</h2>
-          <p>Profile content will be wired from <code>CV.pdf</code> in the next loop.</p>
+          <p class="eyebrow">About</p>
+          <h2>Professional profile</h2>
+          <p>
+            Software engineer focused on Android work, AI-related features, and
+            practical product delivery.
+          </p>
         </article>
         <article class="card">
-          <h2>Experience</h2>
-          <p>Work, education, and projects will stay visible in a tidy one-page layout.</p>
+          <p class="eyebrow">Current role</p>
+          <h2>Samsung Electronics</h2>
+          <p>Android Developer · Jul 2023 to present.</p>
         </article>
         <article class="card">
-          <h2>Projects</h2>
-          <p>Featured work will be arranged here without changing the overall structure.</p>
+          <p class="eyebrow">Focus</p>
+          <h2>Pragmatic building</h2>
+          <p>
+            Speech-to-text, summarization, keyword extraction, and translation
+            are highlighted in the CV.
+          </p>
         </article>
       </section>
 
       <section class="section shell" id="experience">
         <div class="section-heading">
-          <p class="eyebrow">Career</p>
-          <h2>Professional timeline</h2>
+          <p class="eyebrow">Experience</p>
+          <h2>Career timeline</h2>
         </div>
         <div class="timeline">
-          <article class="timeline-item card">
+          <article class="card timeline-item">
             <h3>Samsung Electronics</h3>
-            <p>Android Developer</p>
+            <p class="meta">Android Developer · Jul 2023 – Present</p>
+            <p>
+              Working on a pre-loaded Galaxy application and AI features such as
+              speech-to-text, summarization, keyword extraction, and translation.
+            </p>
+            <p class="tags">Android · Java · Kotlin · Linux</p>
           </article>
-          <article class="timeline-item card">
+          <article class="card timeline-item">
             <h3>Samsung Electronics</h3>
-            <p>Recruiting TF</p>
+            <p class="meta">Recruiting TF · Aug 2022 – Mar 2023</p>
+            <p>
+              Team lead for the recruiting team, collaborating with HR on the
+              open recruitment process for Samsung Electronics DX division.
+            </p>
+            <p class="tags">Human Resource · Communication</p>
+          </article>
+          <article class="card timeline-item">
+            <h3>Fabric Time</h3>
+            <p class="meta">Backend Developer Intern · Jun 2021 – Jul 2021</p>
+            <p>
+              Implemented admin dashboard features and simplified CI/CD with
+              Slack API integration.
+            </p>
+            <p class="tags">Ruby on Rails · Flask · Redis</p>
+          </article>
+          <article class="card timeline-item">
+            <h3>LikeLion at Seoul National University</h3>
+            <p class="meta">President · Mar 2021 – Nov 2023</p>
+            <p>
+              Learned web development, joined projects, and led seminars for new
+              members.
+            </p>
+            <p class="tags">Django · React · JavaScript · Git</p>
           </article>
         </div>
       </section>
 
       <section class="section shell" id="projects">
         <div class="section-heading">
-          <p class="eyebrow">Work</p>
-          <h2>Selected projects</h2>
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
         </div>
         <div class="project-grid">
-          <article class="card">Meetable</article>
-          <article class="card">Tripick</article>
-          <article class="card">Walkbook</article>
+          <article class="card">
+            <h3>Meetable</h3>
+            <p>Backend and frontend for scheduling business meetings.</p>
+            <p class="tags">Express · Prisma · MySQL · React</p>
+          </article>
+          <article class="card">
+            <h3>Tripick</h3>
+            <p>Trip planning service with backend, frontend, and deployment work.</p>
+            <p class="tags">Django · React · TypeScript · EC2 · S3</p>
+          </article>
+          <article class="card">
+            <h3>Walkbook</h3>
+            <p>KaKao Map based main feature and board backend implementation.</p>
+            <p class="tags">Django · Vanilla JS · S3</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Confirmed or pending</h2>
+        </div>
+        <div class="card">
+          <p>
+            No explicit research publication or lab item is confirmed in the CV,
+            so this area stays conservative for now: [사람 확인 필요].
+          </p>
         </div>
       </section>
 
       <section class="section shell games-section" id="games">
         <div class="section-heading">
           <p class="eyebrow">Games</p>
-          <h2>Game zone prepared for the snake game</h2>
+          <h2>Snake game with candy chaos</h2>
         </div>
-        <div class="game-shell card">
-          <p>The actual snake game will be added in the next development loop.</p>
+
+        <div class="game-layout">
+          <article class="game-panel card">
+            <div class="game-toolbar">
+              <button class="button" id="start-btn" type="button">Start</button>
+              <button class="button button-secondary" id="pause-btn" type="button">
+                Pause
+              </button>
+              <button class="button button-secondary" id="restart-btn" type="button">
+                Restart
+              </button>
+            </div>
+
+            <div class="hud" aria-live="polite">
+              <p>Score <strong id="score">0</strong></p>
+              <p>Best <strong id="best-score">0</strong></p>
+              <p>Status <strong id="status">Ready</strong></p>
+            </div>
+
+            <div class="canvas-wrap">
+              <canvas
+                id="game-canvas"
+                width="640"
+                height="640"
+                aria-label="Snake game board"
+              ></canvas>
+            </div>
+
+            <p class="game-help">
+              Use arrow keys or WASD, or tap the touch controls. Snake cannot
+              reverse instantly, timers never duplicate, and the enemy explodes
+              every 5 seconds.
+            </p>
+          </article>
+
+          <aside class="game-panel card controls-panel">
+            <h3>Touch controls</h3>
+            <div class="touch-controls">
+              <div class="touch-row">
+                <button class="touch-btn" data-direction="up" type="button">▲</button>
+              </div>
+              <div class="touch-row touch-row-middle">
+                <button class="touch-btn" data-direction="left" type="button">◀</button>
+                <button class="touch-btn" data-direction="down" type="button">▼</button>
+                <button class="touch-btn" data-direction="right" type="button">▶</button>
+              </div>
+            </div>
+
+            <div class="legend">
+              <div><span class="dot snake"></span> Snake</div>
+              <div><span class="dot food"></span> Food</div>
+              <div><span class="dot enemy"></span> Enemy</div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section shell" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Reach out</h2>
+        </div>
+        <div class="contact-grid">
+          <a class="card contact-card" href="https://github.com/young924">
+            <span>GitHub</span>
+            <strong>github.com/young924</strong>
+          </a>
+          <a class="card contact-card" href="mailto:ahenaka9@gmail.com">
+            <span>Email</span>
+            <strong>ahenaka9@gmail.com</strong>
+          </a>
+          <a class="card contact-card" href="tel:+821066338477">
+            <span>Phone</span>
+            <strong>010-6633-8477</strong>
+          </a>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer shell">
+      <p>Built as a static portfolio with a tiny snake game corner.</p>
+    </footer>
   </body>
 </html>
