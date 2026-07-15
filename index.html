@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Young924 | Portfolio</title>
+    <meta
+      name="description"
+      content="A playful, responsive personal portfolio with a tiny game corner."
+    >
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-shell">
+        <a class="brand" href="#home" aria-label="Home">Young924</a>
+        <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#games">Games</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section shell" id="home">
+        <p class="eyebrow">Personal Portfolio</p>
+        <h1>Playful, professional, and ready for a tiny game corner.</h1>
+        <p class="lede">
+          This first loop preserves the existing content direction and sets up the
+          responsive structure needed for the CV-based site.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#games">See Games</a>
+          <a class="button button-secondary" href="#about">About</a>
+        </div>
+      </section>
+
+      <section class="section shell card-grid" id="about">
+        <article class="card">
+          <h2>About</h2>
+          <p>Profile content will be wired from <code>CV.pdf</code> in the next loop.</p>
+        </article>
+        <article class="card">
+          <h2>Experience</h2>
+          <p>Work, education, and projects will stay visible in a tidy one-page layout.</p>
+        </article>
+        <article class="card">
+          <h2>Projects</h2>
+          <p>Featured work will be arranged here without changing the overall structure.</p>
+        </article>
+      </section>
+
+      <section class="section shell" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Career</p>
+          <h2>Professional timeline</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item card">
+            <h3>Samsung Electronics</h3>
+            <p>Android Developer</p>
+          </article>
+          <article class="timeline-item card">
+            <h3>Samsung Electronics</h3>
+            <p>Recruiting TF</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Work</p>
+          <h2>Selected projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="card">Meetable</article>
+          <article class="card">Tripick</article>
+          <article class="card">Walkbook</article>
+        </div>
+      </section>
+
+      <section class="section shell games-section" id="games">
+        <div class="section-heading">
+          <p class="eyebrow">Games</p>
+          <h2>Game zone prepared for the snake game</h2>
+        </div>
+        <div class="game-shell card">
+          <p>The actual snake game will be added in the next development loop.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
