@@ -146,7 +146,7 @@ canvas {
 }
 
 .hero {
-  padding-top: 70px;
+  padding-top: 44px;
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.8fr);
   gap: 22px;

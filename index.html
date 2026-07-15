@@ -63,6 +63,68 @@
         </aside>
       </section>
 
+      <section class="section shell games-section" id="games">
+        <div class="section-heading">
+          <p class="eyebrow">Games</p>
+          <h2>Snake game with candy chaos</h2>
+        </div>
+
+        <div class="game-layout">
+          <article class="game-panel card">
+            <div class="canvas-wrap">
+              <canvas
+                id="game-canvas"
+                width="640"
+                height="640"
+                aria-label="Snake game board"
+              ></canvas>
+            </div>
+
+            <div class="game-toolbar">
+              <button class="button" id="start-btn" type="button">Start</button>
+              <button class="button button-secondary" id="pause-btn" type="button">
+                Pause
+              </button>
+              <button class="button button-secondary" id="restart-btn" type="button">
+                Restart
+              </button>
+            </div>
+
+            <div class="hud" aria-live="polite">
+              <p>Score <strong id="score">0</strong></p>
+              <p>Best <strong id="best-score">0</strong></p>
+              <p>Status <strong id="status">Ready</strong></p>
+            </div>
+
+            <p class="game-help">
+              Use arrow keys or WASD, or tap the touch controls. Snake cannot
+              reverse instantly, timers never duplicate, and the enemy explodes
+              every 5 seconds.
+            </p>
+          </article>
+
+          <aside class="game-panel card controls-panel">
+            <h3>Touch controls</h3>
+            <div class="touch-controls">
+              <div class="touch-row">
+                <button class="touch-btn" data-direction="up" type="button">▲</button>
+              </div>
+              <div class="touch-row touch-row-middle">
+                <button class="touch-btn" data-direction="left" type="button">◀</button>
+                <button class="touch-btn" data-direction="down" type="button">▼</button>
+                <button class="touch-btn" data-direction="right" type="button">▶</button>
+              </div>
+            </div>
+
+            <div class="legend">
+              <div><span class="dot snake"></span> Snake</div>
+              <div><span class="dot food"></span> Food</div>
+              <div><span class="dot enemy"></span> Enemy</div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
       <section class="section shell card-grid" id="about">
         <article class="card">
           <p class="eyebrow">About</p>
@@ -166,68 +228,6 @@
             No explicit research publication or lab item is confirmed in the CV,
             so this area stays conservative for now: [사람 확인 필요].
           </p>
-        </div>
-      </section>
-
-      <section class="section shell games-section" id="games">
-        <div class="section-heading">
-          <p class="eyebrow">Games</p>
-          <h2>Snake game with candy chaos</h2>
-        </div>
-
-        <div class="game-layout">
-          <article class="game-panel card">
-            <div class="game-toolbar">
-              <button class="button" id="start-btn" type="button">Start</button>
-              <button class="button button-secondary" id="pause-btn" type="button">
-                Pause
-              </button>
-              <button class="button button-secondary" id="restart-btn" type="button">
-                Restart
-              </button>
-            </div>
-
-            <div class="hud" aria-live="polite">
-              <p>Score <strong id="score">0</strong></p>
-              <p>Best <strong id="best-score">0</strong></p>
-              <p>Status <strong id="status">Ready</strong></p>
-            </div>
-
-            <div class="canvas-wrap">
-              <canvas
-                id="game-canvas"
-                width="640"
-                height="640"
-                aria-label="Snake game board"
-              ></canvas>
-            </div>
-
-            <p class="game-help">
-              Use arrow keys or WASD, or tap the touch controls. Snake cannot
-              reverse instantly, timers never duplicate, and the enemy explodes
-              every 5 seconds.
-            </p>
-          </article>
-
-          <aside class="game-panel card controls-panel">
-            <h3>Touch controls</h3>
-            <div class="touch-controls">
-              <div class="touch-row">
-                <button class="touch-btn" data-direction="up" type="button">▲</button>
-              </div>
-              <div class="touch-row touch-row-middle">
-                <button class="touch-btn" data-direction="left" type="button">◀</button>
-                <button class="touch-btn" data-direction="down" type="button">▼</button>
-                <button class="touch-btn" data-direction="right" type="button">▶</button>
-              </div>
-            </div>
-
-            <div class="legend">
-              <div><span class="dot snake"></span> Snake</div>
-              <div><span class="dot food"></span> Food</div>
-              <div><span class="dot enemy"></span> Enemy</div>
-            </div>
-          </aside>
         </div>
       </section>
 
